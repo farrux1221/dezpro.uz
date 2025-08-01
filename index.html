@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
         <!-- SEO tavsif va kalit so'zlar -->
-        <title>IDEALDEZ– Услуги по дезинфекции, дезинсекции и дератизации в Ташкенте</title>
+        <title>DezPro – Услуги по дезинфекции, дезинсекции и дератизации в Ташкенте</title>
         <meta name="description" content="Профессиональные услуги дезинфекции, дезинсекции и дератизации в Ташкенте. Работаем 24/7. Эффективно, безопасно и по доступной цене.">
         <meta name="keywords" content="дезинфекция Ташкент, дезинсекция, дератизация, уничтожение тараканов, борьба с вредителями, санитарные услуги Узбекистан, услуги дезинфекции 24/7">
-        <meta name="author" content="Dezlider.uz – Дезинфекция Ташкент">
+        <meta name="author" content="DezPro.uz – Дезинфекция Ташкент">
       
         <!-- Canonical URL -->
         <link rel="canonical" href="https://idealdez.netlify.app/" />
@@ -17,17 +17,17 @@
         <meta name="robots" content="index, follow">
       
         <!-- Open Graph (Telegram, Facebook, Instagram preview) -->
-        <meta property="og:title" content="Дезлидер – Профессиональные услуги дезинфекции в Ташкенте" />
+        <meta property="og:title" content="DezPro – Профессиональные услуги дезинфекции в Ташкенте" />
         <meta property="og:description" content="Быстро и безопасно избавим ваш дом и офис от насекомых, грызунов и микробов. Работаем по всему Узбекистану. Звоните!" />
         <meta property="og:image" content="https://idealdez.netlify.app/images/dizinfeksiya.jpg" />
         <meta property="og:url" content="https://idealdez.netlify.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ru_RU" />
-        <meta property="og:site_name" content="Дезлидер" />
+        <meta property="og:site_name" content="DezPro" />
       
         <!-- Twitter Cards -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Дезлидер – Дезинфекция, дератизация и дезинсекция в Ташкенте" />
+        <meta name="twitter:title" content="DezPro – Дезинфекция, дератизация и дезинсекция в Ташкенте" />
         <meta name="twitter:description" content="Профессиональные услуги дезинфекции в Ташкенте. 24/7. Быстро, безопасно, доступно." />
         <meta name="twitter:image" content="https://idealdez.netlify.app/images/preview.jpg" />
       
@@ -78,22 +78,22 @@
     
         .modal-content h2 {
           margin-top: 0;
-          color: #ff6600;
+          color: #67aad6;
         }
     
         .modal-content p {
-          font-size: 16px;
+          font-size: 25px;
           margin-bottom: 20px;
         }
     
         .modal-content button {
-          background-color: #ff6600;
-          border: none;
-          color: white;
-          padding: 12px 24px;
-          border-radius: 8px;
-          font-size: 16px;
-          cursor: pointer;
+            background-color: #67aad6;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
         }
     
         /* Yopish tugmasi (X) */
@@ -117,60 +117,54 @@
         <!-- MODAL -->
 <div id="chegirmaModal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close">&#10005;</span>
       <h2>🎁 Успейте сегодня!</h2>
       <p>❗ Только сегодня! Получите <strong>скидку до 20%</strong> на наши услуги.</p>
-      <p><strong>Осталось времени: <span id="timer">05:00</span></strong></p>
-      <button onclick="window.location.href='tel:+998901234567'">📞 Позвонить сейчас</button>
+     <p>
+        все услуги доступны</p>
+      <button onclick="window.location.href='tel:+998947132828'">📞 Позвонить сейчас</button>
     </div>
   </div>
   
   <!-- Telefon tugmasi -->
-  <a href="tel:+998956233434" class="phone-icon" title="Позвонить" aria-label="Позвонить в IDEALDEZ">📞</a>
+  <a href="tel:+998947132828" class="phone-icon" title="Позвонить" aria-label="Позвонить в DezPro">📞</a>
   
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Taymer funksiyasi
-      function startCountdown(duration, display) {
-        let timer = duration, minutes, seconds;
-        const countdown = setInterval(() => {
-          minutes = Math.floor(timer / 60);
-          seconds = timer % 60;
-  
-          // Raqamlarni 2 xonali qilish
-          minutes = minutes < 10 ? '0' + minutes : minutes;
-          seconds = seconds < 10 ? '0' + seconds : seconds;
-  
-          display.textContent = `${minutes}:${seconds}`;
-  
-          if (--timer < 0) {
-            clearInterval(countdown);
-            document.getElementById('chegirmaModal').style.display = 'none';
-          }
-        }, 1000);
-      }
-  
-      // Faqat birinchi kirishda modal ko‘rsatish
-      if (!localStorage.getItem('chegirmaModalShown')) {
-        setTimeout(() => {
-          const modal = document.getElementById('chegirmaModal');
-          modal.style.display = 'block';
-          localStorage.setItem('chegirmaModalShown', 'true');
-  
-          const timerDisplay = document.getElementById('timer');
-          startCountdown(300, timerDisplay); // 5 daqiqa
-        }, 3000); // 3 sekunddan keyin ochiladi
-      }
-  
-      // Yopish tugmasi
-      document.querySelector('.close').addEventListener('click', function () {
-        document.getElementById('chegirmaModal').style.display = 'none';
-      });
+ document.addEventListener('DOMContentLoaded', function () {
+    function startCountdown(duration, display) {
+      let timer = duration;
+      const countdown = setInterval(() => {
+        const minutes = String(Math.floor(timer / 60)).padStart(2, '0');
+        const seconds = String(timer % 60).padStart(2, '0');
+        display.textContent = `${minutes}:${seconds}`;
+
+        if (--timer < 0) {
+          clearInterval(countdown);
+          document.getElementById('chegirmaModal').style.display = 'none';
+        }
+      }, 1000);
+    }
+
+    if (!localStorage.getItem('chegirmaModalShown')) {
+      setTimeout(() => {
+        const modal = document.getElementById('chegirmaModal');
+        modal.style.display = 'flex'; // ✅ flex bo'lishi kerak
+
+        localStorage.setItem('chegirmaModalShown', 'true');
+
+        const timerDisplay = document.getElementById('timer');
+        startCountdown(300, timerDisplay); // 5 daqiqa = 300 sekund
+      }, 3000); // 3 sekund kechikish
+    }
+
+    document.querySelector('.close').addEventListener('click', function () {
+      document.getElementById('chegirmaModal').style.display = 'none';
     });
+  });
   </script>
   
-        <a href="tel:+998956233434" class="phone-icon" title="Позвонить">
-            📞
+        <a href="tel:+998947132828" class="phone-icon" title="Позвонить">
+            📞Позвонить
         </a>
           <header class="site-header" style="position: sticky;top: 0;">
             <div class="container">
@@ -185,8 +179,8 @@
                         </p>
                         <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
                             <i class="site-header-icon bi-whatsapp me-2"></i>
-                            <a href="tel:+998956233434" class="text-white">
-                                +998 95 623 34 34
+                            <a href="tel:+998947132828" class="text-white">
+                                +998 94 713 28 28
                             </a>
                         </p>
                     </div>
@@ -198,7 +192,7 @@
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="images/bubbles.png" class="logo img-fluid" alt="">
-                    <span class="ms-2">IDEALDEZ</span>
+                    <span class="ms-2">DezPro</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
                     <span class="navbar-toggler-icon"></span>
@@ -271,7 +265,7 @@
                         <div class="col-lg-6 col-12">
                             <h2 class="mb-4">Надежные и быстрые услуги</h2>
                             <p>
-                                <a href="https://dezlider.uz">Дезлидер</a> — компания в Ташкенте, предлагающая услуги по дезинфекции, дезинсекции и дератизации. Мы предоставляем высококачественные и эффективные решения по борьбе с вредителями.
+                                <a href="https://dezlider.uz">DezPro</a> — компания в Ташкенте, предлагающая услуги по дезинфекции, дезинсекции и дератизации. Мы предоставляем высококачественные и эффективные решения по борьбе с вредителями.
                                 🔹 После каждого выполненного заказа проводится туманная обработка (сухой туман) для дополнительной защиты и свежести.
                               </p>
                         </div>
@@ -281,8 +275,8 @@
                                 <h6 class="text-white mb-3">Нужна помощь? <br> Позвоните нам:</h6>
                                 <p class="d-flex mb-0">
                                     <i class="bi-telephone-fill custom-icon me-2"></i>
-                                    <a href="tel:+998956233434">
-                                        +998 95 623 34 34
+                                    <a href="tel:+998947132828">
+                                        +998 94 713 28 28
                                     </a>
                                 </p>
                             </div>
@@ -645,15 +639,15 @@
                         </p>
                         <p class="text-white d-flex mb-2">
                             <i class="bi-telephone-fill me-2"></i>
-                            <a href="tel:+998956233434" class="site-footer-link">
-                                +998 95 623 34 34
+                            <a href="tel:+998947132828" class="site-footer-link">
+                                +998 94 713 28 28
                             </a>
                         </p>
                        
                         <p class="text-white d-flex">
                             <i class="bi-envelope-fill me-2"></i>
                             <a href="mailto:info@dezlider.uz" class="site-footer-link">
-                                info@dezlider.uz
+                                info@DezPro.uz
                             </a>
                         </p>
                         <ul class="social-icon mt-4">
@@ -684,7 +678,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2025 IDEALDEZ МЧЖ</p>
+                            <p class="copyright-text mb-0">Copyright © 2025 DezPro МЧЖ</p>
                         </div>
                         <div class="col-lg-6 col-12 text-end">
                            
@@ -709,7 +703,7 @@
             window.onload = function() {
               setTimeout(function() {
                 document.getElementById('chegirmaModal').style.display = 'block';
-              }, 4000); // 4000 ms = 4 sekund
+              }, 5000); // 4000 ms = 4 sekund
             };
           
             // Yopish tugmasi
@@ -720,6 +714,5 @@
               });
             });
           </script>
-          
     </body>
 </html>
